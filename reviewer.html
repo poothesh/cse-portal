@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultancy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }   
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .pdf-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .pdf-item {
+            background-color: #fff;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+            width: 25%;
+        }
+        .pdf-item:hover {
+            transform: translateY(-3px);
+        }
+        .pdf-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #3498db;
+        }
+        .pdf-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .pdf-title {
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Reviewer Details</h1>
+    <ul class="pdf-list">
+        <li class="pdf-item">
+            <a href="https://drive.google.com/file/d/10ElNl7TVUWjN9z-DWU0Q6reu6xGoeNxZ/view?usp=sharing" target="_blank" class="pdf-link" download>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="PDF icon" class="pdf-icon">
+                <span class="pdf-title">Journal Reviewer</span>
+            </a>
+        </li>
+        <li class="pdf-item">
+            <a href="https://drive.google.com/file/d/1gaVaGptgh48MMtZvVKYexskOUnXZA3lL/view?usp=sharing" target="_blank" class="pdf-link" download>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="PDF icon" class="pdf-icon">
+                <span class="pdf-title">Book reviewer</span>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>

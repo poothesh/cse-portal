@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Logo Preloader</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Preloader styles */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        #preloader img {
+            max-width: 200px; /* Adjust the size of the logo */
+            animation: fadein 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes fadein {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        /* Main content styles */
+        #content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="img/kce.png" alt="Loading...">
+    </div>
+
+    <!-- Main Content -->
+    <div id="content">
+        <!-- Your website content here -->
+        <h1>Welcome to My Website</h1>
+        <p>This is the main content of your website.</p>
+    </div>
+
+    <script>
+        // Wait until the entire page is fully loaded
+        window.addEventListener('load', function() {
+            var preloader = document.getElementById('preloader');
+            var content = document.getElementById('content');
+            preloader.style.display = 'none';  // Hide the preloader
+            content.style.display = 'block';   // Show the main content
+        });
+    </script>
+</body>
+</html>

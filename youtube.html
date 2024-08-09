@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My YouTube Channels</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.452);
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding:20px;
+    }
+
+    .channel-card {
+      display: flex;
+      align-items: center;
+      background-color: #ffffff98;
+      border-radius: 12px;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .channel-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .channel-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .channel-info h3 {
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 20px;
+      color: #2c3e50;
+    }
+    .channel-info a{
+      color:#154f5d;
+      text-decoration: none;
+    } 
+
+    .channel-info p {
+      margin: 0;
+      color: #666;
+      font-size: 16px;
+    }
+
+    .channel-icons {
+      display: flex;
+      justify-content: flex-end;
+      flex-grow: 1;
+    }
+
+    .channel-icons a {
+      color: #007bff;
+      font-size: 24px;
+      margin-left: 15px;
+      transition: color 0.3s;
+    }
+
+    .channel-icons a:hover {
+      color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .channel-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .channel-info {
+        margin-top: 10px;
+      }
+
+      .channel-icons {
+        justify-content: center;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="channel-card" id="channel-1">
+      <img src="img/youtube_prof/Kannimuthu.jpg" alt="Channel 1">
+      <div class="channel-info">
+        <h3 ><a href="https://www.youtube.com/channel/UC351p6p2r1cD7p-eFCSNaaA" target="_blank">Dr.S.Kannimuthu</a></h3>
+        <p>Advanced Data Structures and competitive programming.</p>
+      </div>
+    </div>
+
+    <div class="channel-card" id="channel-2">
+        <img src="img/youtube_prof/arunkumar.jpg" alt="Channel 1">
+        <div class="channel-info">
+          <h3><a href="https://www.youtube.com/@dr.arunkumarpm4739" target="_blank">Dr.Arunkumar P M</a></h3>
+          <p>Data Structures</p>
+        </div>
+      </div>
+
+    <div class="channel-card" id="channel-3">
+        <img src="img/youtube_prof/Arul antran vijay.jpg" alt="Channel 1">
+        <div class="channel-info">
+          <h3><a href="https://www.youtube.com/@arulantranvijay" target="_blank">Dr.ArulAntran Vijay</a></h3>
+          <p>Java</p>
+        </div>      
+      </div>
+      
+      <div class="channel-card" id="channel-4">
+        <img src="img/youtube_prof/prabakar.jpg" alt="Channel 1">
+        <div class="channel-info">
+          <h3><a href="https://www.youtube.com/@prabakaralam" target="_blank">Dr.Prabakaran</a></h3>
+          <p>Relevant to Computer Science</p>
+        </div> 
+      </div>
+
+      <div class="channel-card" id="channel-5">
+        <img src="img/youtube_prof/Antony vijay.jpg" alt="Channel 1">
+        <div class="channel-info">
+          <h3><a href="https://www.youtube.com/@ProfAntonyVijay" target="_blank">Mr. Antony Vijay</a></h3>
+          <p>Computer Science topics</p>
+        </div>
+        
+          
+        
+      </div>
+
+    <!-- Add more channel cards here -->
+  </div>
+
+  <!-- <script>
+    // Dynamically generate channel cards
+    const channelData = [
+      {
+        thumbnail: 'channel2-thumbnail.jpg',
+        name: 'Channel 2',
+        description: 'This is the description for Channel 2.'
+      },
+      {
+        thumbnail: 'channel3-thumbnail.jpg',
+        name: 'Channel 3',
+        description: 'This is the description for Channel 3.'
+      },
+      {
+        thumbnail: 'channel4-thumbnail.jpg',
+        name: 'Channel 4',
+        description: 'This is the description for Channel 4.'
+      },
+      {
+        thumbnail: 'channel5-thumbnail.jpg',
+        name: 'Channel 5',
+        description: 'This is the description for Channel 5.'
+      }
+    ];
+
+    const container = document.querySelector('.container');
+
+    channelData.forEach((channel, index) => {
+      const channelCard = document.createElement('div');
+      channelCard.classList.add('channel-card');
+      channelCard.id = channel-${index + 2};
+
+      const channelThumbnail = document.createElement('img');
+      channelThumbnail.src = channel.thumbnail;
+      channelThumbnail.alt = channel.name;
+
+      const channelInfo = document.createElement('div');
+      channelInfo.classList.add('channel-info');
+
+      const channelName = document.createElement('h3');
+      channelName.textContent = channel.name;
+
+      const channelDescription = document.createElement('p');
+      channelDescription.textContent = channel.description;
+
+      const channelIcons = document.createElement('div');
+      channelIcons.classList.add('channel-icons');
+
+      const youtubeLink = document.createElement('a');
+      youtubeLink.href = '#';
+      youtubeLink.target = '_blank';
+      youtubeLink.innerHTML = '<i class="fab fa-youtube"></i>';
+
+      channelIcons.appendChild(youtubeLink);
+
+      channelInfo.appendChild(channelName);
+      channelInfo.appendChild(channelDescription);
+
+      channelCard.appendChild(channelThumbnail);
+      channelCard.appendChild(channelInfo);
+      channelCard.appendChild(channelIcons);
+
+      container.appendChild(channelCard);
+    });
+  </script> -->
+</body>
+</html>

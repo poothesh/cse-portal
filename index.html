@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/kce.png" type="image/png" sizes="16x16">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <title>KCE | CSE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 99.5vh;
+            overflow-y: auto; 
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #154f5d;
+            color: white;
+            padding: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.58);
+-webkit-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.58);
+            overflow-y: auto; 
+        }
+        .sidebar::-webkit-scrollbar {
+            display: none;
+}
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #ffffff86;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-bar {
+            padding: 10px 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .content {
+            position: relative;
+            flex-grow: 1;
+            background-image: url('./img/kcecse.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: transparent;
+        }
+
+        .content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            backdrop-filter: blur(2px) saturate(180%);
+            -webkit-backdrop-filter: blur(2px) saturate(180%);
+            background-color: rgba(17, 25, 40, 0.25);
+            z-index: 0;
+        }
+
+        .content iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navheading {
+            font-size: 18px;
+            color: #cb6a01;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+            }
+
+            .main-content {
+                width: 100%;
+            }
+        }
+
+        .social-icons a {
+            color: #154f5d;
+            text-decoration: none;
+            margin-left: 10px;
+            height: 30px;
+            display: inline-block;
+            line-height: 30px;
+            vertical-align: middle;
+        }
+
+        .social-icons a:hover {
+            color: #cd6103;
+        }
+
+        .social-icons svg {
+            margin: -5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2 class="sidebarHeading">KCE</h2>
+        <ul>
+            <!-- <li><a href="#" data-page="google-scholar.html">Google Scholar</a></li> -->
+            <!-- <li><a href="#" data-page="youtube.html">Youtube</a></li> -->
+            <li><a href="#" data-page="facultydashboard.html">Faculty Dashboard</a></li>
+            <li><a href="#" data-page="journalPublication.html">Journal Publication</a></li>
+            <li><a href="#" data-page="conference.html">Conference Publication</a></li>
+            <li><a href="#" data-page="book-chapter.html">Book/Book Chapter</a></li>
+
+            <li><a href="#" data-page="patent.html">Patent</a></li>
+            <li><a href="#" data-page="sponsored-projects.html">Sponsored-projects</a></li>
+            
+            <li><a href="#" data-page="consultancy.html">Consultancy</a></li>
+            <li><a href="#" data-page="product-development.html">Product Development</a></li>
+            
+            <li><a href="#" data-page="reviewer.html">Reviewer</a></li>
+            <li><a href="#" data-page="Common-students.html">Common-students</a></li>
+            <!-- <li><a href="#" data-page="event-organization.html">Event Organization</a></li> -->
+
+            
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="./img/kce.png" alt="Logo">
+                <h1 class="navheading">Dept of Computer Science and Engineering</h1>
+            </div>
+            <div class="social-icons">
+                <a href="Aboutus.html">About us &nbsp;|</a>
+                <a href="google-scholar.html">Google Scholar &nbsp;|</a>
+                <a href="youtube.html">Youtube</a>
+            </div>
+        </div>
+        <div class="content">
+            <iframe id="contentFrame" src="Aboutus.html" frameborder="0" target="_top"></iframe>
+            <!-- <iframe id="contentFrame" src="google-scholar.html" frameborder="0" target="_blank"></iframe> -->
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
+            const contentFrame = document.getElementById('contentFrame');
+            const aboutusLink = document.querySelector('.social-icons a[href="Aboutus.html"]');
+            const googleLink = document.querySelector('.social-icons a[href="google-scholar.html"]');
+            const youtubeLink = document.querySelector('.social-icons a[href="youtube.html"]');
+            const contactusLink = document.querySelector('.social-icons a[data-page="Contact.html"]');
+    
+            // Sidebar navigation links
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const page = this.getAttribute('data-page') || 'black.html';
+                    contentFrame.src = page;
+                });
+            });
+    
+            // About us link
+            aboutusLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                contentFrame.src = 'Aboutus.html';
+            });
+
+            //google scholar
+            googleLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                contentFrame.src = 'google-scholar.html';
+            });
+
+            //youtube
+            youtubeLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                contentFrame.src = 'youtube.html';
+            });
+    
+            // Contact us link
+            contactusLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                contentFrame.src = 'Contact.html';
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

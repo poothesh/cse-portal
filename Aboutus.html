@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Department - Computer Science and Engineering</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: relative;
+            background: linear-gradient(rgba(21, 79, 93, 0.8), rgba(17, 25, 40, 0.8)), url('img/kcecse.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        header .text-content {
+            max-width: 60%;
+            z-index: 2;
+            text-align: center;
+        }
+
+        header .text-content h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            animation: fadeInDown 2s ease-in-out;
+            color: #ea730ccf;;
+        }
+
+        header .text-content p {
+            font-size: 18px;
+            margin: auto;
+            animation: fadeInUp 2s ease-in-out;
+            text-align: justify;
+        }
+
+        header .image-content {
+            max-width: 40%;
+            z-index: 2;
+            animation: slideInFromRight 2s ease-in-out;
+            margin-left: 45px;
+        }
+
+        header .image-content img {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        header .image-content img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        section {
+            padding: 40px 20px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.5s ease-in-out;
+        }
+        section:hover{
+          transform: scale(1.01);
+        }
+        section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #154f5d;
+        }
+
+        section p,
+        section ul {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.6;
+            padding-left: 20px;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        footer {
+            background-color: #154f5d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="text-content">
+            <h1>About the Department</h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;The Department of Computer Science and Engineering was established in the year 2000 and it offers a four-year undergraduate
+                program in Computer Science and Engineering. The Department is located in a newly constructed 70000 Sq.ft high-tech Computer
+                Science and Information Technology block. The Computer Science and Information Technology block also includes a separate laboratory block
+                and an Open Air Theatre with a capacity to accommodate 500 students. The Department has a separate library of more than 1000 books,
+                international journals, national journals, magazines, back volumes, project reports and lecture CDs. The department maintains an exclusive
+                question bank library comprising a vast collection of courses related to computer science and engineering.
+                The department has a good record of student placements in national, international, and multinational companies.</p>
+        </div>
+        <div class="image-content">
+            <img src="img/2017-11-21.jpg" alt="Department Image">
+        </div>
+    </header>
+
+    <section class="vision">
+        <h2>Vision</h2>
+        <p>To create computer professionals with a strong academic and technical background, achieving distinction at the national and
+            international levels, while serving and leading society.</p>
+    </section>
+
+    <section class="mission">
+        <h2>Mission</h2>
+        <ul>
+            <li>Provide excellent learning opportunities in Computer Science and Engineering.</li>
+            <li>Establish research centers addressing societal needs.</li>
+            <li>Develop ICT-based solutions for national development.</li>
+        </ul>
+    </section>
+
+    <section class="regulations">
+        <h2>Regulations</h2>
+        <p>R2023</p>
+    </section>
+
+    <section class="facilities">
+        <h2>Lab Facilities</h2>
+        <ul>
+            <li>Allen Turing Lab</li>
+            <li>Oracle WDP Lab</li>
+            <li>Emc² Lab</li>
+            <li>IBM COE Lab</li>
+        </ul>
+    </section>
+
+    <section class="peo">
+        <h2>Programme Educational Objectives</h2>
+        <ul>
+            <li>PEO1: Graduates will comprehend mathematics, science, and engineering fundamentals, developing proficiency in computer-based engineering tools.</li>
+            <li>PEO2: Graduates will communicate and work effectively on multidisciplinary projects, adhering to professional ethics and social responsibility.</li>
+            <li>PEO3: Graduates will engage in lifelong learning, becoming experts as entrepreneurs or employees, expanding their domain knowledge.</li>
+        </ul>
+    </section>
+
+    <section class="po">
+        <h2>Programme Outcomes (POs)</h2>
+        <ul>
+            <li>PO1: Apply mathematics, science, and engineering fundamentals to solve complex problems.</li>
+            <li>PO2: Identify, analyze, and solve complex engineering problems using research and literature review.</li>
+            <li>PO3: Design solutions for engineering problems considering public health, safety, societal, and environmental factors.</li>
+            <li>PO4: Conduct research and investigations to provide valid conclusions.</li>
+            <li>PO5: Use modern engineering and IT tools for complex engineering activities.</li>
+            <li>PO6: Assess societal, health, safety, legal, and cultural issues in professional engineering practice.</li>
+            <li>PO7: Understand the need for sustainable development in professional engineering solutions.</li>
+            <li>PO8: Commit to professional ethics and responsibilities.</li>
+            <li>PO9: Function effectively as an individual or team leader in diverse and multidisciplinary settings.</li>
+            <li>PO10: Communicate effectively in complex engineering activities.</li>
+            <li>PO11: Apply engineering and management principles to project management in multidisciplinary environments.</li>
+            <li>PO12: Engage in lifelong learning in the context of technological change.</li>
+        </ul>
+    </section>
+
+    <section class="pso">
+        <h2>Program Specific Outcomes (PSOs)</h2>
+        <ul>
+            <li>PSO1: Analyze, design, implement, test, and evaluate programs related to algorithms, networking, cloud computing, IoT, and data analytics.</li>
+            <li>PSO2: Develop innovative solutions for complex problems and identify research challenges in Computer Science and Engineering.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Department of Computer Science and Engineering</p>
+    </footer>
+
+    <script>
+        // Function to check if an element is in the viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Function to add visible class to sections when they come into the viewport
+        function handleScroll() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+
+        // Listen for scroll events
+        window.addEventListener('scroll', handleScroll);
+        // Trigger the scroll handler to check initial positions
+        handleScroll();
+    </script>
+</body>
+
+</html>

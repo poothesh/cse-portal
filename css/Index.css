@@ -1,0 +1,109 @@
+h2,h3,h4,h5,h6{
+    font-weight: 400;
+    font-family: "cairo",sans-serif;
+}
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+body{
+    background-image: url('/kcecse.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    backdrop-filter: blur(2px) saturate(180%);
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.27);
+    overflow-y: none;
+}
+header.navbar {
+    background-color: #8e8e8e00;
+    padding: 10px 10px; 
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 7px 5px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 1px 7px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 7px 5px 0px rgba(0,0,0,0.2);
+}
+
+.container {
+    /* max-width: 1200px;  */
+    margin: 0 auto;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    color: #cd6103;
+    
+}
+
+.Department {
+    flex: 1;
+    margin-right: 30px;
+    margin-left: 80px;
+    margin-right: 200px;
+}
+
+.social-icons a {
+    color: #000; 
+    text-decoration: none;
+    margin-left: 30px;
+   
+}
+
+.social-icons a:hover {
+    color: #cd6103; 
+}
+
+.social-icons svg {
+    margin: -5px;
+}
+
+/* body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(''); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    margin-top: 90px; 
+} */
+ .list{
+    overflow-y: auto;
+    height: 100dvh;
+ }
+ .list li{
+    margin-left: -32px;
+    padding: 10px;
+    border-right: 1px solid black;
+    width: 250px;
+    border-bottom:1px solid black ;
+    list-style-type: none;
+    font-family: "cairo",sans-serif;  
+    text-align: center;
+}
+
+.navheading{
+    font-size: 8px;
+}
