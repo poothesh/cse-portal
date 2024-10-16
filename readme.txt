@@ -16,5 +16,4 @@ Technologies Used:
 
 Future Improvements:
    Integration with backend services for authentication and data persistence.
-   Adding more interactivity such as real-time notifications and chat features
-
+   Adding more interactivity such as real-time notifications and chat features.
