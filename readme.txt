@@ -13,6 +13,7 @@ Technologies Used:
    HTML: Structure and layout of the portal.
    CSS: Styling for a clean, modern look.
    JavaScript: Dynamic interactions and functionality.
+   Bootstarp : User Friendly layouts
 
 Future Improvements:
    Integration with backend services for authentication and data persistence.
