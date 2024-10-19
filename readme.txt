@@ -5,7 +5,7 @@ Features:
 
     User-friendly design: Simple navigation for easy access to all features.
     Announcements section: Keep students updated with the latest course news.
-    Assignments: View, download, and submit assignments directly from the portal.
+    Assignments: View, download, and  submit assignments directly from the portal.
     Responsive layout: Optimized for both desktop and mobile devices.
 
 Technologies Used:
